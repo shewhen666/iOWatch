@@ -1,13 +1,13 @@
-# iOWatch
+# watch
 
-The main function of this program is to use the full potential off extremly accurate DS3231 (with temperature compensation) time keeping sensor
-  and show us that time precice! 
+The main function of this program is to use the full potential of extremely accurate DS3231 (with temperature compensation) timekeeping sensor
+  and show us that time precise! 
  
 ## [Short Press] displaying time
  
-  The Watch is designed with 12LED's positioned in Circle like so
+  The Watch is designed with 12LED's positioned in Circle-like so
  
-  1. Houres are represented normal (in Circle 1, 2, 3, 4, 5, ... , 12)
+  1. Houres are represented normal (in Circle 1, 2, 3, 4, 5, ..., 12)
   
                             |________|
                            /_. ____ ._\
@@ -23,7 +23,7 @@ The main function of this program is to use the full potential off extremly accu
                            \-.______.-/
                             |________|
                
-  2. Minutes are ranging from 0 - 60 in 5min sequnce (0, 5, 10, 15, 20...) are displayed from 0-12
+  2. Minutes are ranging from 0 - 60 in 5min sequence (0, 5, 10, 15, 20...) are displayed from 0-12
      (1.st LED 5min, 2nd LED 10min, 3rd LED 15min, etc..) like so.
  
                             |________|
@@ -40,7 +40,7 @@ The main function of this program is to use the full potential off extremly accu
                            \-.______.-/
                             |________|
  
-  3. Rest of the minutes are displayed from 1-4min.
+  3. The rest of the minutes are displayed from 1-4min.
  
                             |________|
                            /_. ____ ._\
@@ -60,9 +60,9 @@ The main function of this program is to use the full potential off extremly accu
  
  ### Example
  
-  If its 10:23 - Pressing the button wakes the device up, reads the time. Reading the time takes three steps
+  If it's 10:23 - Pressing the button wakes the device up, reads the time. Reading the time takes three steps
   First, hours are shown so the 10'Led light up [10:--]
-  After hours, second step is displaying the minutes in 5min sequance so the 4.LED will light up showing 20min [10:2-]
+  After hours, the second step is displaying the minutes in 5min sequence so the 4.LED will light up showing 20min [10:2-]
  
                 |________|                       |________|                     |________|
                /_. ____ ._\                     /_. ____ ._\                   /_. ____ ._\
@@ -78,12 +78,12 @@ The main function of this program is to use the full potential off extremly accu
                \-.______.-/                     \-.______.-/                   \-.______.-/
                 |________|                       |________|                     |________|
 
-Third and final step, the rest of minutes raging from 0 - 4 are displayed, so if 23-20 = 3 the third LED will light up [10:23].
+In the third and final step, the rest of the minutes raging from 0 - 4 are displayed, so if 23-20 = 3 the third LED will light up [10:23].
  
 ## [Double Press] displaying temperature in *C
  
  
-Displaying tempearture works same as displaying minutes - for now only positive +0*C temperatures are displayed
+Displaying temperature works the same as displaying minutes - for now only positive +0*C temperatures are displayed
  
                             |________|
                            /_. ____ ._\
@@ -120,7 +120,7 @@ Displaying tempearture works same as displaying minutes - for now only positive 
    17* C
  
   Double pressing the button wakes the device up, reads the temperature
-  To show 17*C we would need 17 LEDs, right? to show the correct and precise temperature we display it same as minutes.
+  To show 17*C we would need 17 LEDs, right? to show the correct and precise temperature we display it the same as minutes.
   
   The 15*C LED lights up
   
@@ -158,9 +158,9 @@ Displaying tempearture works same as displaying minutes - for now only positive 
  
 ## [Long Press] time setting mode
   
-  Holding the button 3+ seconds activates the time setting mode, time setting mode consists of 3 menus, short pressing the button scrolls the time and long pressing the button goes trough menus.
-  To set the time press and hold the button for more then 3 seconds, once the 12'o clock LED lights up that means you entered MENU 1 in witch you select hours time, short pressing the button you scroll trough the hours
-  after selecting propper hours time, again press and hold the button to activate MENU 2, same story - short pressing the button scorls trought the minutes [0, 5, 10, 15 ...].
+  Holding the button 3+ seconds activates the time setting mode, time setting mode consists of 3 menus, short pressing the button scrolls the time and long-pressing the button goes through menus.
+  To set the time press and hold the button for more than 3 seconds, once the 12'o clock LED lights up that means you entered MENU 1 in witch you select hours, short pressing the button you scroll trough the hours
+  after selecting propper hours time, again press and hold the button to activate MENU 2, same story - short pressing the button scrolls through the minutes [0, 5, 10, 15 ...].
   Holding the button again activates the final MENU 3, setting the rest of the minutes and pressing the button again sets the time and exits the time setting menu. 
   
   
@@ -174,7 +174,7 @@ Displaying tempearture works same as displaying minutes - for now only positive 
  
   12 LED's Connected in circle
   Atmega328 microcontroller with 8Mhz oscillator clocked at 1Mhz
-  DS3231 real time clock
+  DS3231 real-time clock
   CR2032 3V 225mAh battery
   ## Authors
 
